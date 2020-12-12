@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cajero Banamex</title>
+  </head>
+  <body>
+    <style>
+      .cajero {
+        width: 75%;
+        height: 75%;
+        text-align: center;
+        margin: 0 auto;
+      }
+      h1 {
+        margin: 0 auto;
+      }
+
+      .foto img {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+      }
+      .inputs {
+        width: 250px;
+      }
+      input {
+        margin: 0 auto;
+      }
+
+      .billetesDisponibles {
+        display: flex;
+        align-items: center;
+
+      }
+      .billetesDisponibles p {
+        margin: 3px auto;
+      }
+    </style>
+
+    <section class="cajero">
+      <h1>Cajero automatico Banamex</h1>
+      <h5>Recuerda que el cajero es pobre, no te acabes el dinero :)</h5>
+      <p class="foto">
+        <img src="cajero.gif" alt="Imagen alusiva al cajero" />
+      </p>
+      <div class="billetesDisponibles">
+        <p class="billete100">
+          <img src="./billete100.png" alt="Billete de 100 dolares" />
+          <p><strong id="billeteDenominacion100">0</strong></p>
+        </p>
+        <p class="billete50">
+          <img src="./billete50.png" alt="Billete de 50 dolres" />
+          <p><strong id="billeteDenominacion50">0</strong></p>
+
+        </p>
+        <p class="billete20">
+          <img src="./billete20.png" alt="Billete de 20 dolares" />
+          <p><strong id="billeteDenominacion20">0</strong></p>
+
+        </p>
+        <p class="billete10">
+          <img src="./billete10.png" alt="Billete de 10 dolares" />
+          <p><strong id="billeteDenominacion10">0</strong></p>
+
+        </p>
+        
+      </div>
+      <p class="inputs">
+        <input type="number" id="dinero" />
+        <input type="button" value="Extraer" id="extraer" />
+      </p>
+      <p id="resultado"></p>
+    </section>
+
+    <script src="./cajero.js"></script>
+  </body>
+</html>
